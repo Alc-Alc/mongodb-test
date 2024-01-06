@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mongodb-test"
+version = "0.1.0"
+description = ""
+authors = ["Alc-Alc <alc@localhost>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+litestar = "^2.4.5"
+pydantic = {extras = ["email"], version = "^2.5.3"}
+python-bsonjs = "^0.3.0"
+motor = "^3.3.2"
+uvicorn = "^0.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
